@@ -1,0 +1,57 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+
+    color: darkslategray;
+    background-color: rgb(235, 235, 246);
+
+    margin: 6vh;
+    /* overflow: hidden; */
+}
+
+header#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lavender;
+    margin: -6vh -6vh 6vh -6vh;
+    padding: 2vh 7vh 2vh 7vh;
+    position: fixed;
+    width: 95%;
+}
+
+a.nav:link {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+a.nav:visited {
+    color: darkslategray
+}
+
+a.nav:hover {
+    color: cadetblue;
+}
+
+h1#title {
+    margin-block: 0;
+}
+
+footer#otherinfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    background-color: rgb(215, 215, 233);
+    position: relative;
+    padding-top: 6vh;
+    padding-bottom: 3vh;
+    margin-bottom: -6vh;
+    margin-left: -6vh;
+    padding-right: 12vh; /* not sure why this works */
+
+    font-size: smaller;
+}
+
+footer#otherinfo div.footerhead {
+    font-weight: bolder;
+}
