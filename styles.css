@@ -13,10 +13,12 @@ header#navbar {
     display: flex;
     justify-content: space-between;
     background-color: lavender;
-    margin: -6vh -6vh 6vh -6vh;
+    margin: 0 -6vh 6vh -6vh;
     padding: 2vh 7vh 2vh 7vh;
     position: fixed;
+    top: 0;
     width: 95%;
+    border-bottom: 2px lightslategray solid;
 }
 
 a.nav:link {
@@ -36,6 +38,86 @@ h1#title {
     margin-block: 0;
 }
 
+h1#mainpagetitle {
+    margin: 36vh 27vw 49vh 27vw;
+    padding: 5vw;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    width: 34vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
+div#mainpagebody {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7vw 0 7vw;
+}
+
+h1#bodytitle {
+    background-color: rgb(235, 235, 246);
+}
+
+h2#bodycontent {
+    background-color: black;
+}
+
+#rightbody {
+    width: 50%;
+}
+
+#leftbody {
+    width: 50%;
+}
+
+h1#bodytitle, h2#bodycontent {
+    margin-block-start: 0;
+}
+
+div#bodycolumn {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 100%;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    padding: 2vw 0 2vw 2vw;
+}
+
+div.content {
+    font-size: 1.5em;
+    margin-bottom: 30vh;
+    padding: 1vw;
+}
+
+div.content div.contenttitle {
+    font-weight: bolder;
+    margin-bottom: 1.5vh;
+}
+
+div#imggrid {
+    margin: 50vh 10vw 20vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.imgrow {
+    display: flex;
+    justify-content: space-around;
+}
+
+img.gridimg {
+    width: 10vw;
+    margin: 2vw;
+}
+
+
+
+
+
+
+
 footer#otherinfo {
     display: flex;
     width: 100%;
@@ -48,6 +130,7 @@ footer#otherinfo {
     margin-bottom: -6vh;
     margin-left: -6vh;
     padding-right: 12vh; /* not sure why this works */
+    border-top: 2px lightslategray solid;
 
     font-size: smaller;
 }
