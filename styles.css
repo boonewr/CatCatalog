@@ -70,7 +70,8 @@ h2#bodycontent {
     width: 50%;
 }
 
-h1#bodytitle, h2#bodycontent {
+h1#bodytitle,
+h2#bodycontent {
     margin-block-start: 0;
 }
 
@@ -122,14 +123,15 @@ footer.otherinfo {
     padding-bottom: 3vh;
     margin-bottom: -6vh;
     margin-left: -6vh;
-    padding-right: 12vh; /* not sure why this works */
+    padding-right: 12vh;
+    /* not sure why this works */
     border-top: 2px lightslategray solid;
 
     font-size: smaller;
 }
 
 /* I need to play around with this some more. The idea is that I dont need to have all the info on every single page, but I still want to have the visual effect of a footer. */
-footer.otherinfo#singlepage { 
+footer.otherinfo#singlepage {
     position: absolute;
     margin-top: 0;
     bottom: 6vh;
@@ -142,6 +144,71 @@ footer.otherinfo#singlepage {
 footer.otherinfo div.footerhead {
     font-weight: bolder;
 }
+
+div#submit {
+    width: 15%;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-left: 40.5%;
+    padding: 1vw;
+    background-color: rgb(215, 215, 233);
+    border: 2px lightslategray solid;
+}
+
+a#submitlink {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+a#submitlink:hover {
+    color: rgb(46, 39, 89);
+}
+
+
+
+
+
+
+
+
+/* survey */
+
+form#survey {
+    margin: 15vh 5vw 15vh 5vw;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    padding: 1vw;
+}
+
+fieldset {
+    border: none;
+}
+
+div.formlinebreak {
+    margin: 5vh;
+}
+
+input,
+textarea {
+    background-color: rgb(235, 235, 246);
+}
+
+textarea#description {
+    display: block;
+    margin: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* cat pages */
@@ -208,5 +275,5 @@ a.namelink {
 }
 
 a.namelink:hover {
-    color:rgb(46, 39, 89);
+    color: rgb(46, 39, 89);
 }

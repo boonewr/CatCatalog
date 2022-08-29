@@ -6,31 +6,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Catalogue</title>
+    <title>Cat-alog</title>
 </head>
 
 <body>
     <header id="navbar">
-        <div id="navlink"><a class="nav" href="main.html">Main Page</a></div>
+        <div class="navlink"><a class="nav" href="main.html">Main Page</a></div>
         <h1 id="title">Cat Catalogue</h1>
-        <div id="navlink">Search</div>
+        <div class="navlink">Search</div>
     </header>
 
+    <form action="TBD" id="survey">
+        <fieldset>
+            <label>Your cat's name:</label>
+            <input type="text" name="catname" id="name">
+            <div class="formlinebreak"></div>
+            <label>A brief description:</label>
+            <textarea name="catdesc" id="description" rows="4" cols="40"
+                placeholder="My cat is a formidable hunter who enjoys..."></textarea>
+            <div class="formlinebreak"></div>
+            <label>Upload a picture of your cat:</label>
+            <input type="file" name="file" id="picture">
+            <div class="formlinebreak"></div>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 
-    <footer id="otherinfo">
-        <div class="footerbox">
-            <div class="footerhead">Site by</div>
-            <div class="footertext">Robbie Boone</div>
-            <div class="footertext">boonewr@guilford.edu</div>
-        </div>
-        <div class="footerbox">
-            <div class="footerhead">Last modified</div>
-            <div class="footertext">8/29/2022</div>
-        </div>
-        <div class="footerbox">
-            <div class="footerhead">Intellectual Property</div>
-            <div class="footertext">All photos taken by me</div>
-        </div>
+    <footer class="otherinfo" id="singlepage">
+        <div class="footerbox"></div>
     </footer>
 </body>
 
