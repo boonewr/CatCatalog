@@ -3,7 +3,7 @@ title = document.getElementById("bodytitle");
 addEventListener("scroll", checkScroll);
 
 function checkScroll() {
-    title.style.color = "blue";
+    // title.style.color = "blue";
     if (window.scrollY > 1000) {
         title.style.position = "fixed";
         title.style.top = "20vh";

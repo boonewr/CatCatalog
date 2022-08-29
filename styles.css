@@ -112,13 +112,12 @@ img.gridimg {
     margin: 2vw;
 }
 
-footer#otherinfo {
+footer.otherinfo {
     display: flex;
     width: 100%;
     justify-content: space-around;
 
     background-color: rgb(215, 215, 233);
-    position: relative;
     padding-top: 6vh;
     padding-bottom: 3vh;
     margin-bottom: -6vh;
@@ -129,7 +128,18 @@ footer#otherinfo {
     font-size: smaller;
 }
 
-footer#otherinfo div.footerhead {
+/* I need to play around with this some more. The idea is that I dont need to have all the info on every single page, but I still want to have the visual effect of a footer. */
+footer.otherinfo#singlepage { 
+    position: absolute;
+    margin-top: 0;
+    bottom: 6vh;
+    padding-top: 0vh;
+    padding-bottom: 0;
+    height: 1vh;
+    color: rgb(215, 215, 233)
+}
+
+footer.otherinfo div.footerhead {
     font-weight: bolder;
 }
 
@@ -170,3 +180,33 @@ img#sid3 {
     right: 4vw;
 }
 
+div.bio {
+    width: 30%;
+    margin: 5vh 32vw 5vh 34vw;
+}
+
+div.bio ul.bioinfo {
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    padding: 3vh 3vw 3vh 3vw;
+    color: darkslateblue;
+}
+
+ul.bioinfo div.infotitle {
+    font-size: 1.2em;
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+ul.bioinfo div.infocontent {
+    color: darkslategray;
+}
+
+a.namelink {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+a.namelink:hover {
+    color:rgb(46, 39, 89);
+}
