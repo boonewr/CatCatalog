@@ -1,24 +1,48 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vh;
+    font-size: 15pt;
 
     color: darkslategray;
     background-color: rgb(235, 235, 246);
-
-    margin: 6vh;
-    /* overflow: hidden; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header#navbar {
-    display: flex;
-    justify-content: space-between;
     background-color: lavender;
-    margin: 0 -6vh 6vh -6vh;
-    padding: 2vh 7vh 2vh 7vh;
+    /* margin: 0 -6vh 6vh -6vh; */
+    /* padding: 2vh 2vw 2vh 2vw; */
     position: fixed;
     top: 0;
-    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1vh;
+    text-align: center;
+    /* padding-bottom: 2vh; */
+    /* padding-top: 1.5vh; */
+
+    min-block-size: 10vh;
+    width: 100%;
     border-bottom: 2px lightslategray solid;
+}
+
+div#headercontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+div#mainlink {
+    padding-left: 2vw;
+}
+
+div#searchlink {
+    padding-right: 2vw;
 }
 
 a.nav:link {
@@ -87,7 +111,7 @@ div#bodycolumn {
 
 div.content {
     font-size: 1.5em;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
     padding: 1vw;
 }
 
@@ -96,8 +120,15 @@ div.content div.contenttitle {
     margin-bottom: 1.5vh;
 }
 
+iframe#lpmap {
+    height: 50vh;
+    /* height: 80%; */
+    width: 90%;
+}
+
+
 div#imggrid {
-    margin: 50vh 10vw 20vh 10vw;
+    margin: 40vh 8vw 20vh 8vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -109,8 +140,13 @@ div.imgrow {
 }
 
 img.gridimg {
-    width: 10vw;
+    width: 1000px;
+    max-width: 80%;
     margin: 2vw;
+}
+
+img#sid {
+    /* max-width: 80%; */
 }
 
 footer.otherinfo {
@@ -122,9 +158,6 @@ footer.otherinfo {
     padding-top: 6vh;
     padding-bottom: 3vh;
     margin-bottom: -6vh;
-    margin-left: -6vh;
-    padding-right: 12vh;
-    /* not sure why this works */
     border-top: 2px lightslategray solid;
 
     font-size: smaller;
@@ -154,17 +187,6 @@ div#submit {
     background-color: rgb(215, 215, 233);
     border: 2px lightslategray solid;
 }
-
-a#submitlink {
-    text-decoration: none;
-    color: darkslateblue;
-}
-
-a#submitlink:hover {
-    color: rgb(46, 39, 89);
-}
-
-
 
 
 
@@ -202,6 +224,29 @@ textarea#description {
 
 
 
+/* media queries */
+
+@media screen and (orientation: portrait) {
+    h1#title {
+        font-size: 1.5em;
+        /* max-width: 40%; */
+    }
+
+    header#navbar {
+        justify-content: space-around;
+    }
+/* 
+    .navlink, .headerelement {
+        max-width: 40%;
+    } */
+
+    div#headercontent {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+        /* max-width: 30%; */
+    }
+}
 
 
 
@@ -211,7 +256,8 @@ textarea#description {
 
 
 
-/* cat pages */
+
+/* -------------------------------------- cat pages -------------------------------------- */
 
 h1.catname {
     /* width: 100%; */
@@ -224,27 +270,6 @@ div.styleline {
     width: 20%;
     background-color: darkslategray;
     margin: 2vh 0 2vh 39vw;
-}
-
-img#sid1 {
-    max-width: 25%;
-    position: absolute;
-    top: 10vh;
-    left: 2vw;
-}
-
-img#sid2 {
-    max-width: 25%;
-    position: absolute;
-    top: 55vh;
-    left: 2vw;
-}
-
-img#sid3 {
-    width: 25%;
-    position: absolute;
-    top: 10vh;
-    right: 4vw;
 }
 
 div.bio {
@@ -276,4 +301,28 @@ a.namelink {
 
 a.namelink:hover {
     color: rgb(46, 39, 89);
+}
+
+
+
+/* sid */
+img#sid1 {
+    max-width: 27%;
+    position: absolute;
+    top: 12vh;
+    left: 2vw;
+}
+
+img#sid2 {
+    max-width: 27%;
+    position: absolute;
+    top: 55vh;
+    left: 2vw;
+}
+
+img#sid3 {
+    width: 27%;
+    position: absolute;
+    top: 20vh;
+    right: 4vw;
 }

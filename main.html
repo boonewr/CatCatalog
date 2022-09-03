@@ -20,79 +20,146 @@
 
 <body>
     <header id="navbar">
-        <div class="navlink"><a class="nav" href="main.html">Main Page</a></div>
-        <h1 id="title">Cat Catalogue</h1>
-        <div class="navlink">Search</div>
+        <div id="headercontent">
+            <div id="mainlink" class="navlink" class="headerelement"><a class="nav" href="main.html">Main Page</a></div>
+            <h1 id="title" class="headerelement">Cat Catalogue</h1>
+            <div id="searchlink" class="navlink" class="headerelement">Search</div>
+        </div>
     </header>
-    <h1 id="mainpagetitle">Lindely Park Cat Catalogue</h1>
 
+    <div id="body">
+        <h1 id="mainpagetitle">Lindely Park Cat Catalogue</h1>
 
-    <div id="mainpagebody">
-        <div id="leftbody">
-            <h1 id="bodytitle">Cat Catalogue</h1>
+        <div id="mainpagebody">
+            <div id="leftbody">
+                <h1 id="bodytitle">Cat Catalogue</h1>
 
-        </div>
-        <div id="rightbody">
-            <!-- <h2 id="bodycontent">test content</h2> -->
-            <div id="bodycolumn">
-                <div class="content">
-                    <div class="contenttitle">Who?</div>
-                    Along the travels of my extensive walking career, I've come across many curious creatures. For
-                    instance: the many mischevious cats found in my own neighborhood...
-                </div>
-                <div class="content">
-                    <div class="contenttitle">What?</div>
-                    It's all cats. The local dogs are not very interesting.
-                </div>
-                <div class="content">
-                    <div class="contenttitle">Where?</div>
-                    Lindely Park.
-                    <!-- I'll put a map of some sort here. -->
-                </div>
-                <div class="content">
-                    <div class="contenttitle">Why?</div>
-                    I like cats.
-                    <!--  I may or may not expound this further. -->
+            </div>
+            <div id="rightbody">
+                <!-- <h2 id="bodycontent">test content</h2> -->
+                <div id="bodycolumn">
+                    <div class="content">
+                        <div class="contenttitle">Who?</div>
+                        Along the travels of my extensive walking career, I've come across many curious creatures. For
+                        instance: the many mischevious cats found in my own neighborhood...
+                    </div>
+                    <div class="content">
+                        <div class="contenttitle">What?</div>
+                        It's all cats. The local dogs are not very interesting.
+                    </div>
+                    <div class="content">
+                        <div class="contenttitle">Where?</div>
+                        <iframe id="lpmap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6450.111308860102!2d-79.84428192271719!3d36.067746592787344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531bdd39408a47%3A0x5b2d4596d52bc1c!2sLindley%20Park%2C%20Greensboro%2C%20NC!5e0!3m2!1sen!2sus!4v1662237290288!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="content">
+                        <div class="contenttitle">Why?</div>
+                        I like cats.
+                        <!--  I may or may not expound this further. -->
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- For now, I just have one image of my cat repeated for all of them. In the final version, 
+            each will be a unique image and they will all have different IDs that will be used to keep track-->
+        <div id="imggrid">
+            <div class="imgrow" id="row1">
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="ember.html"><img class="gridimg" id="ember"
+                            src="images/ember/emberthumbnail.jpg"
+                            alt="a picutre of a black cat staring up at the camera"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="biscuit.html"><img class="gridimg" id="sid"
+                            src="images/Biscuit/biscuitthumbnail.jpg"
+                            alt="a picutre of an orange cat looking surprised"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="emmett.html"><img class="gridimg" id="emmett" src="images/Emmett/emmetthumbnail.jpg"
+                            alt="an extreme closeup of a tabby cat"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="lucy.html"><img class="gridimg" id="lucy" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+            </div>
+            <div class="imgrow" id="row2">
+                <div class="gridthumbnail">
+                    <a class="grid" href="gunny.html"><img class="gridimg" id="gunny" src="images/Gunny/gunnythumbnail.jpg"
+                            alt="a picutre of a black cat's face with grass in the background"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+            </div>
+            <div class="imgrow" id="row3">
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+            </div>
+            <div class="imgrow" id="row4">
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+                <div class="gridthumbnail">
+                    <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg"
+                            alt="a picutre of a black cat laying on a chair"></a>
+                </div>
+            </div>
+        </div>
+        <div id="submit"><a id="submitlink" class="nav" href="survey.html">Submit your own cat</a></div>
     </div>
 
-    <!-- For now, I just have one image of my cat repeated for all of them. In the final version, 
-        each will be a unique image and they will all have different IDs that will be used to keep track-->
-    <div id="imggrid">
-        <div class="imgrow" id="row1">
-            <div class="gridthumbnail">
-                <a class="grid" href="sid.html"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></a>
-            </div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-        </div>
-        <div class="imgrow" id="row2">
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-        </div>
-        <div class="imgrow" id="row3">
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-        </div>
-        <div class="imgrow" id="row4">
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-            <div class="gridthumbnail"><img class="gridimg" id="sid" src="images/thebeast.jpg" alt="a picutre of a black cat laying on a chair"></div>
-        </div>
-    </div>
-    <div id="submit"><a id="submitlink" href="survey.html">Submit your own cat</a></div>
 
     <footer class="otherinfo" id="multipage">
         <div class="footerbox">
