@@ -1,6 +1,6 @@
 title = document.getElementById("bodytitle");
 
-window.addEventListener("scroll", checkScroll);
+// window.addEventListener("scroll", checkScroll);
 
 
 mainbody = document.getElementById("mainpagebody");

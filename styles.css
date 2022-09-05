@@ -88,6 +88,9 @@ div#mainpagebody {
 
 h1#bodytitle {
     background-color: rgb(235, 235, 246);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20vh;
 }
 
 h2#bodycontent {
@@ -239,7 +242,8 @@ textarea#description {
     header#navbar {
         justify-content: space-around;
     }
-/* 
+
+    /* 
     .navlink, .headerelement {
         max-width: 40%;
     } */
@@ -358,6 +362,40 @@ img#sid3 {
     right: 4vw;
 }
 
+body#sidpage,
+body#sidpage div.infocontent,
+body#sidpage div.bio ul.bioinfo {
+    background-color: dimgray;
+    color: lightgray;
+}
+
+body#sidpage div#headercontent,
+body#sidpage header#navbar,
+body#sidpage footer.otherinfo#singlepage {
+    background-color: dimgray;
+    color: lightgray;
+}
+
+body#sidpage div.infotitle,
+body#sidpage h1.catname,
+body#sidpage h1#title {
+    color: white
+}
+
+body#sidpage a.namelink,
+body#sidpage a.nav {
+    color: lightskyblue
+}
+
+body#sidpage a.namelink:hover,
+body#sidpage a.nav:hover {
+    color: black
+}
+
+body#sidpage div.styleline {
+    background-color: white;
+}
+
 /* ember */
 img#ember1 {
     top: 12vh;
@@ -377,25 +415,34 @@ img#ember3 {
     min-width: 30%;
 }
 
-body#ember, body#ember div.infocontent,  body#ember div.bio ul.bioinfo {
+body#ember,
+body#ember div.infocontent,
+body#ember div.bio ul.bioinfo {
     background-color: rgb(200, 200, 200);
     color: rgb(53, 0, 0);
 }
 
-body#ember div#headercontent, body#ember header#navbar, body#ember footer.otherinfo#singlepage  {
+body#ember div#headercontent,
+body#ember header#navbar,
+body#ember footer.otherinfo#singlepage {
     color: rgb(53, 0, 0);
-    background-color: rgb(190, 190, 190); ;
-}   
+    background-color: rgb(190, 190, 190);
+    ;
+}
 
-body#ember div.infotitle, body#ember h1.catname, body#ember h1#title {
+body#ember div.infotitle,
+body#ember h1.catname,
+body#ember h1#title {
     color: rgb(120, 0, 0);
 }
 
-body#ember a.namelink, body#ember a.nav {
+body#ember a.namelink,
+body#ember a.nav {
     color: rgb(160, 0, 0);
 }
 
-body#ember a.namelink:hover, body#ember a.nav:hover {
+body#ember a.namelink:hover,
+body#ember a.nav:hover {
     color: rgb(255, 0, 0);
 }
 
@@ -409,7 +456,699 @@ img#biscuit1 {
 }
 
 img#biscuit2 {
-    top: 55vh;
-    left: 35vw;
+    bottom: 2vh;
+    left: 25vw;
     min-width: 45vw;
+}
+
+img#biscuit3 {
+    top: 35vh;
+    right: 1vw;
+    min-width: 26vw;
+}
+
+h1#biscuit {
+    margin-top: 15vh;
+}
+
+body#biscuitpage div.bio {
+    margin-top: 0;
+}
+
+body#biscuitpage,
+body#biscuitpage div.infocontent,
+body#biscuitpage div.bio ul.bioinfo {
+    background-color: blanchedalmond;
+    color: dimgray;
+}
+
+body#biscuitpage div#headercontent,
+body#biscuitpage header#navbar,
+body#biscuitpage footer.otherinfo#singlepage {
+    background-color: blanchedalmond;
+    color: dimgray;
+}
+
+body#biscuitpage div.infotitle,
+body#biscuitpage h1.catname,
+body#biscuitpage h1#title {
+    color: sienna;
+}
+
+body#biscuitpage a.namelink,
+body#biscuitpage a.nav {
+    color: sandybrown;
+}
+
+body#biscuitpage a.namelink:hover,
+body#biscuitpage a.nav:hover {
+    color: white;
+}
+
+body#biscuitpage div.styleline {
+    background-color: darkslategray;
+}
+
+
+/* emmett */
+img#emmett1 {
+    top: 14vh;
+    right: 3vw;
+    min-width: 27vw;
+}
+
+img#emmett3 {
+    bottom: 5vh;
+    right: 3vw;
+    min-width: 27vw;
+}
+
+img#emmett2 {
+    top: 25vh;
+    left: 3vw;
+}
+
+
+body#emmettpage,
+body#emmettpage div.infocontent,
+body#emmettpage div.bio ul.bioinfo {
+    background-color: oldlace;
+    color: gray;
+}
+
+body#emmettpage div#headercontent,
+body#emmettpage header#navbar,
+body#emmettpage footer.otherinfo#singlepage {
+    background-color: oldlace;
+    color: gray;
+}
+
+body#emmettpage div.infotitle,
+body#emmettpage h1.catname,
+body#emmettpage h1#title {
+    color: darkkhaki
+}
+
+body#emmettpage a.namelink,
+body#emmettpage a.nav {
+    color: rgb(211, 102, 0);
+}
+
+body#emmettpage a.namelink:hover,
+body#emmettpage a.nav:hover {
+    color: rgb(0, 0, 0);
+}
+
+body#emmettpage div.styleline {
+    background-color: slategray;
+}
+
+
+
+
+/* lucy */
+img#lucy3 {
+    left: 2vw;
+    top: 15vh;
+    min-width: 30vw;
+}
+
+img#lucy2 {
+    top: 15vh;
+    right: 5vw;
+    min-width: 20vw;
+}
+
+img#lucy1 {
+    bottom: 3vh;
+    left: 40vw;
+    max-width: 20vw;
+}
+
+h1#lucy {
+    margin-top: 15vh;
+}
+
+body#lucypage,
+body#lucypage div.infocontent,
+body#lucypage div.bio ul.bioinfo {
+    background-color: oldlace;
+    color: gray;
+}
+
+body#lucypage div#headercontent,
+body#lucypage header#navbar,
+body#lucypage footer.otherinfo#singlepage {
+    background-color: oldlace;
+    color: gray;
+}
+
+body#lucypage div.infotitle,
+body#lucypage h1.catname,
+body#lucypage h1#title {
+    color: darkkhaki
+}
+
+body#lucypage a.namelink,
+body#lucypage a.nav {
+    color: rgb(211, 102, 0);
+}
+
+body#lucypage a.namelink:hover,
+body#lucypage a.nav:hover {
+    color: black
+}
+
+body#lucypage div.styleline {
+    background-color: slategray
+}
+
+
+
+/* gunny */
+img#gunny1 {
+    bottom: 2vh;
+    left: 30vw;
+    min-width: 40vw;
+}
+
+img#gunny2 {
+    left: 2vw;
+    top: 17vh;
+}
+
+img#gunny3 {
+    right: 2vw;
+    top: 20vh;
+    min-width: 25vw;
+}
+
+body#gunnypage,
+body#gunnypage div.infocontent,
+body#gunnypage div.bio ul.bioinfo {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+body#gunnypage div#headercontent,
+body#gunnypage header#navbar,
+body#gunnypage footer.otherinfo#singlepage {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+body#gunnypage div.infotitle,
+body#gunnypage h1.catname,
+body#gunnypage h1#title {
+    color: gray;
+}
+
+body#gunnypage a.namelink,
+body#gunnypage a.nav {
+    color: lightblue;
+}
+
+body#gunnypage a.namelink:hover,
+body#gunnypage a.nav:hover {
+    color: white;
+}
+
+body#gunnypage div.styleline {
+    background-color: lightslategray;
+}
+
+
+/* Gunny's brother */
+img#brother1 {
+    top: 15vh;
+    left: 2vw;
+}
+
+img#brother2 {
+    bottom: 10vh;
+    left: 2vw;
+    min-width: 25vw;
+}
+
+img#brother3 {
+    top: 30vh;
+    right: 2vw;
+}
+
+body#brotherpage,
+body#brotherpage div.infocontent,
+body#brotherpage div.bio ul.bioinfo,
+body#brotherpage div#headercontent,
+body#brotherpage header#navbar,
+body#brotherpage footer.otherinfo#singlepage {
+    background-color: ivory;
+    color: lightslategray;
+}
+
+body#brotherpage div.infotitle,
+body#brotherpage h1.catname,
+body#brotherpage h1#title {
+    color: burlywood;
+}
+
+body#brotherpage a.namelink,
+body#brotherpage a.nav {
+    color: rgb(211, 102, 0);
+}
+
+body#brotherpage a.namelink:hover,
+body#brotherpage a.nav:hover {
+    color: rgb(255, 0, 0);
+}
+
+body#brotherpage div.styleline {
+    background-color: lightslategray;
+}
+
+
+/* violin */
+img#violin1 {
+    top: 15vh;
+    left: 4vw;
+}
+
+img#violin2 {
+    bottom: 7vh;
+    left: 4vw;
+}
+
+img#violin3 {
+    top: 20vh;
+    right: 5vw;
+    min-width: 25vw;
+}
+
+body#violinpage,
+body#violinpage div.infocontent,
+body#violinpage div.bio ul.bioinfo,
+body#violinpage div#headercontent,
+body#violinpage header#navbar,
+body#violinpage footer.otherinfo#singlepage {
+    background-color: blanchedalmond;
+    color: firebrick;
+}
+
+
+body#violinpage div.infotitle,
+body#violinpage h1.catname,
+body#violinpage h1#title {
+    color: darkred;
+}
+
+body#violinpage a.namelink,
+body#violinpage a.nav {
+    color: maroon;
+}
+
+body#violinpage a.namelink:hover,
+body#violinpage a.nav:hover {
+    color: coral;
+}
+
+body#violinpage div.styleline {
+    background-color: lightslategray;
+}
+
+
+
+/* tulip */
+img#tulip1 {
+    top: 30vh;
+    left: 2vw;
+    min-width: 27vw;
+}
+
+img#tulip2 {
+    bottom: 2vh;
+    right: 18vw;
+    min-width: 30vw;
+}
+
+img#tulip3 {
+    right: 3vw;
+    top: 15vh;
+}
+
+h1#tulip {
+    margin-top: 15vh;
+}
+
+body#tulippage,
+body#tulippage div.infocontent,
+body#tulippage div.bio ul.bioinfo,
+body#tulippage div#headercontent,
+body#tulippage header#navbar,
+body#tulippage footer.otherinfo#singlepage {
+    background-color: gainsboro;
+    color: rosybrown;
+}
+
+body#tulippage div.infotitle,
+body#tulippage h1.catname,
+body#tulippage h1#title {
+    color: saddlebrown;
+}
+
+body#tulippage a.namelink,
+body#tulippage a.nav {
+    color: tan;
+}
+
+body#tulippage a.namelink:hover,
+body#tulippage a.nav:hover {
+    color: slategray;
+}
+
+body#tulippage div.styleline {
+    background-color: lightslategray;
+}
+
+
+
+/* odysseus */
+img#odysseus1 {
+    bottom: 5vh;
+    left: 6vw;
+}
+
+img#odysseus2 {
+    right: 3vw;
+    top: 15vh;
+    min-height: 65vh;
+    max-height: 65vh;
+}
+
+img#odysseus3 {
+    right: 30vw;
+    top: 15vh;
+    min-height: 65vh;
+    max-height: 65vh;
+}
+
+body#odysseuspage div#body {
+    padding-right: 60vw;
+}
+
+body#odysseuspage div.bio {
+    /* margin-left: -12vw;
+    margin-right: -0vw; */
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body#odysseuspage h1.catname {
+    margin-top: 13vh;
+}
+
+body#odysseuspage,
+body#odysseuspage div.infocontent,
+body#odysseuspage div.bio ul.bioinfo,
+body#odysseuspage div#headercontent,
+body#odysseuspage header#navbar,
+body#odysseuspage footer.otherinfo#singlepage {
+    background-color: lightgray;
+    color: dimgray;
+}
+
+body#odysseuspage div.infotitle,
+body#odysseuspage h1.catname,
+body#odysseuspage h1#title {
+    color: black;
+}
+
+body#odysseuspage a.namelink,
+body#odysseuspage a.nav {
+    color: lightcyan;
+}
+
+body#odysseuspage a.namelink:hover,
+body#odysseuspage a.nav:hover {
+    color: royalblue;
+}
+
+body#odysseuspage div.styleline {
+    background-color: lightslategray;
+}
+
+
+
+/* milo */
+img#milo1 {
+    top: 20vh;
+    left: 2vw;
+}
+
+img#milo2 {
+    top: 30vh;
+    right: 2vw;
+}
+
+img#milo3 {
+    bottom: 2vh;
+    left: 30vw;
+    min-width: 40vw;
+}
+
+h1#milo {
+    margin-top: 14vh;
+}
+
+body#milopage,
+body#milopage div.infocontent,
+body#milopage div.bio ul.bioinfo,
+body#milopage div#headercontent,
+body#milopage header#navbar,
+body#milopage footer.otherinfo#singlepage {
+    background-color: cornsilk;
+    color: lightsalmon;
+}
+
+body#milopage div.infotitle,
+body#milopage h1.catname,
+body#milopage h1#title {
+    color: peru;
+}
+
+body#milopage a.namelink,
+body#milopage a.nav {
+    color: salmon;
+}
+
+body#milopage a.namelink:hover,
+body#milopage a.nav:hover {
+    color: darkkhaki;
+}
+
+body#milopage div.styleline {
+    background-color: lightslategray;
+}
+
+
+
+/* guinness */
+img#guinness1 {
+    top: 20vh;
+    left: 3vw;
+    min-width: 25vw;
+}
+
+img#guinness2 {
+    bottom: 2vh;
+    right: 5vw;
+    max-width: 25vw;
+}
+
+img#guinness3 {
+    top: 12vh;
+    right: 5vw;
+    max-width: 25vw;
+}
+
+body#guinnesspage,
+body#guinnesspage div.infocontent,
+body#guinnesspage div.bio ul.bioinfo {
+    background-color: rgb(216, 208, 198);
+    color: saddlebrown;
+}
+
+body#guinnesspage div#headercontent,
+body#guinnesspage header#navbar,
+body#guinnesspage footer.otherinfo#singlepage {
+    color: saddlebrown;
+    background-color: rgb(216, 208, 198);
+}
+
+body#guinnesspage div.infotitle,
+body#guinnesspage h1.catname,
+body#guinnesspage h1#title {
+    color: rgb(175, 143, 101);
+}
+
+body#guinnesspage a.namelink,
+body#guinnesspage a.nav {
+    color: rgb(175, 143, 101);
+}
+
+body#guinnesspage a.namelink:hover,
+body#guinnesspage a.nav:hover {
+    color: black;
+}
+
+body#guinnesspage div.styleline {
+    background-color: lightslategray;
+}
+
+
+/* ernie */
+img#ernie1 {
+    top: 20vh;
+    left: 3vw;
+}
+
+img#ernie2 {
+    top: 25vh;
+    right: 1vw;
+    min-width: 32vw;
+}
+
+body#erniepage,
+body#erniepage div.infocontent,
+body#erniepage div.bio ul.bioinfo {
+    background-color: rgb(255, 234, 200);
+    color: rgb(35, 17, 0);
+}
+
+body#erniepage div#headercontent,
+body#erniepage header#navbar,
+body#erniepage footer.otherinfo#singlepage {
+    color: rgb(35, 17, 0);
+    background-color: rgb(255, 234, 200);
+    ;
+}
+
+body#erniepage div.infotitle,
+body#erniepage h1.catname,
+body#erniepage h1#title {
+    color: rgb(120, 54, 0);
+}
+
+body#erniepage a.namelink,
+body#erniepage a.nav {
+    color: rgb(211, 102, 0);
+}
+
+body#erniepage a.namelink:hover,
+body#erniepage a.nav:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+/* beebo */
+img#beebo1 {
+    top: 15vh;
+    right: 3vw;
+    min-width: 30vw;
+}
+
+img#beebo2 {
+    bottom: 4vh;
+    right: 3vw;
+    min-width: 30vw;
+}
+
+img#beebo3 {
+    top: 30vh;
+    left: 5vw;
+}
+
+body#beebopage,
+body#beebopage div.infocontent,
+body#beebopage div.bio ul.bioinfo {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body#beebopage div#headercontent,
+body#beebopage header#navbar,
+body#beebopage footer.otherinfo#singlepage {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    ;
+}
+
+body#beebopage div.infotitle,
+body#beebopage h1.catname,
+body#beebopage h1#title {
+    color: rgb(128, 128, 128);
+}
+
+body#beebopage a.namelink,
+body#beebopage a.nav {
+    color: rgb(200, 200, 200);
+}
+
+body#beebopage a.namelink:hover,
+body#beebopage a.nav:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* max */
+img#max1 {
+    top: 14vh;
+    left: 3vw;
+}
+
+img#max3 {
+    bottom: 7vh;
+    left: 3vw;
+}
+
+img#max2 {
+    right: 4vw;
+    top: 20vh;
+    min-width: 25vw;
+}
+
+body#maxpage,
+body#maxpage div.infocontent,
+body#maxpage div.bio ul.bioinfo {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+body#maxpage div#headercontent,
+body#maxpage header#navbar,
+body#maxpage footer.otherinfo#singlepage {
+    color: white;
+    background-color: rgb(50, 50, 50);
+    ;
+}
+
+body#maxpage div.infotitle,
+body#maxpage h1.catname,
+body#maxpage h1#title {
+    color: lightgray;
+}
+
+body#maxpage a.namelink,
+body#maxpage a.nav {
+    color: slategray;
+}
+
+body#maxpage a.namelink:hover,
+body#maxpage a.nav:hover {
+    color: white;
+}
+
+body#maxpage div.styleline {
+    background-color: white;
 }
