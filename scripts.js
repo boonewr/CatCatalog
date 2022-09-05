@@ -1,18 +1,29 @@
 title = document.getElementById("bodytitle");
 
-addEventListener("scroll", checkScroll);
+window.addEventListener("scroll", checkScroll);
 
-// Rough implementation. Learned about the scroll event from mozilla web docs
+
+mainbody = document.getElementById("mainpagebody");
+bodyheight = mainbody.offsetHeight;
+bodyPosition = mainbody.getBoundingClientRect();
+bodyTop = bodyPosition.top;
+leftTitle = document.getElementById("bodytitle");
+titleHeight = leftTitle.offsetHeight;
+stopHeight = bodyTop - titleHeight;
+
 function checkScroll() {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > (0.9 * stopHeight)) {
         title.style.position = "fixed";
         title.style.top = "20vh";
+        console.log(titleHeight + " ," + bodyTop + " ,,," + stopHeight);
+        console.log("window x: " + window.screenX);
     }
     if (window.scrollY < 1000) {
         title.style.position = "";
     }
-    if (window.scrollY > 2400) {
+    if (window.scrollY > bodyPosition.bottom) {
         title.style.position = "relative";
-        title.style.top = "1600px";
+        title.style.top = bodyPosition.bottom + "px";
     }
+
 }

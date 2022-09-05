@@ -1,3 +1,8 @@
+* {
+    transition-property: all;
+    transition-duration: 1000ms;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15pt;
@@ -25,6 +30,9 @@ header#navbar {
     min-block-size: 10vh;
     width: 100%;
     border-bottom: 2px lightslategray solid;
+
+    /* I expected this to be -1 for on top, but this works */
+    z-index: 1;
 }
 
 div#headercontent {
@@ -145,10 +153,6 @@ img.gridimg {
     margin: 2vw;
 }
 
-img#sid {
-    /* max-width: 80%; */
-}
-
 footer.otherinfo {
     display: flex;
     width: 100%;
@@ -165,7 +169,7 @@ footer.otherinfo {
 
 /* I need to play around with this some more. The idea is that I dont need to have all the info on every single page, but I still want to have the visual effect of a footer. */
 footer.otherinfo#singlepage {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 0;
     bottom: 6vh;
     padding-top: 0vh;
@@ -262,19 +266,22 @@ textarea#description {
 h1.catname {
     /* width: 100%; */
     text-align: center;
-    margin: 20vh 5vh 0 10vh;
+    /* margin: 20vh 5vh 0 10vh; */
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.styleline {
     min-block-size: 0.3vh;
     width: 20%;
     background-color: darkslategray;
-    margin: 2vh 0 2vh 39vw;
+    margin: 2vh auto 2vh auto;
 }
 
 div.bio {
     width: 30%;
-    margin: 5vh 32vw 5vh 34vw;
+    margin: 5vh auto 5vh auto;
 }
 
 div.bio ul.bioinfo {
@@ -301,28 +308,108 @@ a.namelink {
 
 a.namelink:hover {
     color: rgb(46, 39, 89);
+    font-style: italic;
+}
+
+img.catthumbnail {
+    max-width: 27%;
+    position: absolute;
+}
+
+img.catfullimg {
+    position: fixed;
+    height: 80vh;
+    top: 10000vh;
+    opacity: 0;
+}
+
+div#grayout {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: black;
+    position: fixed;
+    opacity: 0;
+    top: -10000px;
+}
+
+div#exitfullscreen {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    opacity: 0;
+    top: -10000px;
 }
 
 
 
 /* sid */
 img#sid1 {
-    max-width: 27%;
-    position: absolute;
     top: 12vh;
     left: 2vw;
 }
 
 img#sid2 {
-    max-width: 27%;
-    position: absolute;
     top: 55vh;
     left: 2vw;
 }
 
 img#sid3 {
-    width: 27%;
-    position: absolute;
     top: 20vh;
     right: 4vw;
+}
+
+/* ember */
+img#ember1 {
+    top: 12vh;
+    right: 2vw;
+    min-width: 30%;
+}
+
+img#ember2 {
+    top: 20vh;
+    left: 3vw;
+    min-width: 30%;
+}
+
+img#ember3 {
+    top: 55vh;
+    right: 2vw;
+    min-width: 30%;
+}
+
+body#ember, body#ember div.infocontent,  body#ember div.bio ul.bioinfo {
+    background-color: rgb(200, 200, 200);
+    color: rgb(53, 0, 0);
+}
+
+body#ember div#headercontent, body#ember header#navbar, body#ember footer.otherinfo#singlepage  {
+    color: rgb(53, 0, 0);
+    background-color: rgb(190, 190, 190); ;
+}   
+
+body#ember div.infotitle, body#ember h1.catname, body#ember h1#title {
+    color: rgb(120, 0, 0);
+}
+
+body#ember a.namelink, body#ember a.nav {
+    color: rgb(160, 0, 0);
+}
+
+body#ember a.namelink:hover, body#ember a.nav:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+/* biscuit */
+img#biscuit1 {
+    top: 12vh;
+    left: 3vw;
+    min-width: 20%;
+}
+
+img#biscuit2 {
+    top: 55vh;
+    left: 35vw;
+    min-width: 45vw;
 }

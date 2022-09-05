@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="catscripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat-alog</title>
 </head>
 
-<body>
+<body id="page">
+    
     <header id="navbar">
         <div id="headercontent">
             <div id="mainlink" class="navlink" class="headerelement"><a class="nav" href="main.html">Main Page</a></div>
@@ -20,15 +21,16 @@
 
     <div id="body">
 
-        <h1 class="catname">SID</h1>
+        <h1 class="catname" id="test">SID</h1>
         <div class="styleline"></div>
 
-        <img class="catpicture" id="sid1" src="images/sid1.png" alt="a black cat standing in a garden bed">
-        <img class="catpicture" id="sid2" src="images/sid2.png"
+        <img class="catthumbnail" id="sid1" src="images/Sid/sid1.png" alt="a black cat standing in a garden bed">
+        <img class="catthumbnail" id="sid2" src="images/Sid/sid2.png"
             alt="a black cat laying on scraps of wrapping paper with a wild look in its eyes">
-        <img class="catpicture" id="sid3" src="images/sid3.png" alt="a black cat sitting on a chair in a dramatic pose">
+        <img class="catthumbnail" id="sid3" src="images/Sid/sid3.png"
+            alt="a black cat sitting on a chair in a dramatic pose">
 
-        <div class="bio">
+        <div class="bio" id="catdesc">
             <ul class="bioinfo">
                 <li class="info">
                     <div class="infotitle">Bio</div>
@@ -51,6 +53,15 @@
     <footer class="otherinfo" id="singlepage">
         <div class="footerbox"></div>
     </footer>
+    <div id="grayout"></div>
+
+    <img class="catfullimg" src="images/Sid/sid1.png" alt="a black cat standing in a garden bed">
+    <img class="catfullimg" src="images/Sid/sid2.png"
+        alt="a black cat laying on scraps of wrapping paper with a wild look in its eyes">
+    <img class="catfullimg" src="images/Sid/sid3.png"
+        alt="a black cat sitting on a chair in a dramatic pose">
+
+    <div id="exitfullscreen"></div>
 </body>
 
 </html>
