@@ -28,6 +28,8 @@ title = document.getElementById("bodytitle");
 
 // }
 
+arrow = document.getElementById("navigatorarrow");
+
 
 
 

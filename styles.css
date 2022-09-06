@@ -121,6 +121,17 @@ h1#mainpagetitle {
     text-align: center;
 }
 
+div#navigatorarrow {
+    font-size: 30pt;
+    position: absolute;
+    bottom: 5vh;
+    left: 40vw;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 div#mainpagebody {
     display: flex;
     justify-content: space-between;
