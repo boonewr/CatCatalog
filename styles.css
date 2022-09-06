@@ -1,6 +1,6 @@
 * {
     transition-property: all;
-    transition-duration: 1000ms;
+    transition-duration: 300ms;
 }
 
 body {
@@ -108,6 +108,10 @@ div#searchitems {
 
 div.searchitem {
     position: fixed;
+}
+
+div.searchitem:hover {
+    background-color: lightskyblue;
 }
 
 div.searchitem a {
@@ -321,7 +325,7 @@ textarea#description {
     }
 
     header#navbar {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     /* 
@@ -331,9 +335,75 @@ textarea#description {
 
     div#headercontent {
         width: 80%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         /* max-width: 30%; */
+    }
+
+    div#imggrid {
+        visibility: hidden;
+    }
+
+    div#mobileimggrid {
+        visibility: visible;
+    }
+
+    div#mainpagebody {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+
+    div#leftbody {
+        visibility: hidden;
+    }
+
+    div#rightbody {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    img.catfullimg {
+        width: 80vw;
+    }
+
+    div#mobilebox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    span#desktopbody {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    img.catthumbnail {
+        max-width: 70%;
+        position: static;
+    }
+
+    div.bio {
+        width: 100%;
+        /* margin: 1vw auto 1vw auto; */
+        margin: 0;
+    }
+
+    div.bio ul.bioinfo {
+        padding: 3vh 3vw 3vh 3vw;
+        width: 90%;
+        margin: 0;
+    }
+
+    
+}
+
+@media screen and (orientation: landscape) {
+    div#imggrid {
+        visibility: visible;
+    }
+
+    div#mobileimggrid {
+        visibility: hidden;
     }
 }
 
