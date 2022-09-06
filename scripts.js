@@ -32,36 +32,7 @@ function checkScroll() {
 
 
 // -------------------------------------- Search Function! ----------------------------------------
-//  helpful:   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes 
 // I am baffled that this all works
-
-
-class SearchItem {
-    constructor(item, relevance) {
-        this.item = item;
-        this.relevance = relevance;
-    }
-
-    get item() {
-        return this.item;
-    }
-
-    get relevance() {
-        return this.relevance
-    }
-
-    set relevance(relevance) {
-        this.relevance = relevance;
-    }
-}
-
-
-
-// sid = new SearchItem("Sid", 0);
-// ember = new SearchItem("Ember", 0);
-// biscuit = new SearchItem("Biscuit", 0);
-// emmett  = new SearchItem("Emmett", 0);
-// lucy = new SearchItem("Lucy", 0);
 
 searchBox = document.getElementById("searchtext");
 searchPanel = document.getElementById("searchpanel");
