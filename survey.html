@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <script src="surveyscripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat-alog</title>
 </head>
 
 <body>
     <header id="navbar">
-        <div class="navlink"><a class="nav" href="main.html">Main Page</a></div>
-        <h1 id="title">Cat Catalogue</h1>
-        <div class="navlink">Search</div>
+        <div id="headercontent">
+            <div id="mainlink" class="navlink"><a class="nav" href="main.html">Main Page</a></div>
+            <h1 id="title">Cat Catalogue</h1>
+            <div id="searchlink" class="navlink">Search</div>
+        </div>
     </header>
 
     <form action="TBD" id="survey">
@@ -23,18 +26,39 @@
             <div class="formlinebreak"></div>
             <label>A brief description:</label>
             <textarea name="catdesc" id="description" rows="4" cols="40"
-                placeholder="My cat is a formidable hunter who enjoys..."></textarea>
+                placeholder="My cat has a generally mean disposition and hates the color blue..."></textarea>
             <div class="formlinebreak"></div>
             <label>Upload a picture of your cat:</label>
-            <input type="file" name="file" id="picture">
+            <input type="file" name="file" id="picture" class="button">
             <div class="formlinebreak"></div>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="button">
         </fieldset>
     </form>
 
     <footer class="otherinfo" id="singlepage">
         <div class="footerbox"></div>
     </footer>
+    <div id="grayout"></div>
+    <div id="searchpanel">
+        <input type="text" name="textsearch" id="searchtext" placeholder="Search...">
+        <div id="searchitems">
+            <div class="searchitem" data-relevance="0" id="sid"><a href="sid.html">Sid</a></div>
+            <div class="searchitem" data-relevance="0" id="ember"><a href="ember.html">Ember</a></div>
+            <div class="searchitem" data-relevance="0" id="biscuit"><a href="biscuit.html">Biscuit</a></div>
+            <div class="searchitem" data-relevance="0" id="emmett"><a href="emmett.html">Emmett</a></div>
+            <div class="searchitem" data-relevance="0" id="lucy"><a href="lucy.html">Lucy</a></div>
+            <div class="searchitem" data-relevance="0" id="gunny"><a href="gunny.html">Gunny</a></div>
+            <div class="searchitem" data-relevance="0" id="brother"><a href="brother.html">Brother</a></div>
+            <div class="searchitem" data-relevance="0" id="violin"><a href="violin.html">Violin</a></div>
+            <div class="searchitem" data-relevance="0" id="tulip"><a href="tulip.html">Tulip</a></div>
+            <div class="searchitem" data-relevance="0" id="odysseus"><a href="odysseus.html">Odysseus</a></div>
+            <div class="searchitem" data-relevance="0" id="milo"><a href="milo.html">Milo</a></div>
+            <div class="searchitem" data-relevance="0" id="guinness"><a href="guinness.html">Guinness</a></div>
+            <div class="searchitem" data-relevance="0" id="ernie"><a href="ernie.html">Ernie</a></div>
+            <div class="searchitem" data-relevance="0" id="beebo"><a href="beebo.html">Beebo</a></div>
+            <div class="searchitem" data-relevance="NAN!" id="max"><a href="max.html">Max</a></div>
+        </div>
+    </div>
 </body>
 
 </html>

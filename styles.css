@@ -66,30 +66,6 @@ a.nav:hover {
     color: cadetblue;
 }
 
-
-/* div#searchlink div.searchitem a {
-    display: none;
-    text-decoration: none;
-    color: darkslategray;
-    padding: 4px;
-    text-align: left;
-    box-shadow: 1px 1px dimgray;
-    width: 75%;
-    position: fixed;
-}
-
- div#searchlink:hover div.searchitem a {
-    display: block;
-} 
-
-input#searchbox {
-    position: fixed;
-    top: 2.4vh;
-    right: 
-    display: inline;
-    margin-right: -15vw;
-} */
-
 div#searchpanel {
     position: fixed;
     right: 0;
@@ -129,26 +105,6 @@ input#searchtext {
     border: 2px lightslategray solid;
     margin: 1vw;
 }
-
-/* #test233 {
-    top: 10vh;
-    right: 10vw;
-    display: block;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 h1#title {
@@ -224,7 +180,7 @@ iframe#lpmap {
 
 
 div#imggrid {
-    margin: 40vh 8vw 20vh 8vw;
+    margin: 40vh 8vw 10vh 8vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -280,6 +236,10 @@ div#submit {
     border: 2px lightslategray solid;
 }
 
+div#lastcontent {
+    margin-bottom: 3vh;
+}
+
 
 
 
@@ -307,6 +267,17 @@ textarea {
     background-color: rgb(235, 235, 246);
 }
 
+input.button {
+    background-color: rgb(235, 235, 246);
+    border: lightslategray 2px solid;
+    color: darkslategray;
+}
+
+/* input#file-upload-button {
+    background-color: rgb(235, 235, 246);
+    border: lightslategray 2px solid;
+} */
+
 textarea#description {
     display: block;
     margin: 1vh;
@@ -319,13 +290,33 @@ textarea#description {
 /* media queries */
 
 @media screen and (orientation: portrait) {
+    body {
+        font-size: 18px;
+    }
+
     h1#title {
         font-size: 1.5em;
         /* max-width: 40%; */
     }
 
+    h1#mainpagetitle {
+        font-size: 20pt;
+        padding: 2vw;
+        width: 60%;
+        margin: 10vh auto 10vh auto;
+    }
+
+
+
     header#navbar {
         justify-content: space-between;
+        font-size: 12px;
+        width: 100vw;
+        min-block-size: 3vh;
+    }
+
+    div#headercontent {
+        height: 2vh;
     }
 
     /* 
@@ -341,6 +332,7 @@ textarea#description {
     }
 
     div#imggrid {
+        margin-top: 0;
         visibility: hidden;
     }
 
@@ -351,6 +343,7 @@ textarea#description {
     div#mainpagebody {
         display: block;
         margin: 0 auto 0 auto;
+        font-size: 12pt;
     }
 
     div#leftbody {
@@ -362,39 +355,60 @@ textarea#description {
         margin: 0 auto 0 auto;
     }
 
-    img.catfullimg {
-        width: 80vw;
-    }
+    /* img.catfullimg {
+        max-width: 80vw; 
+        height: auto; 
+        width: 100%;
+    } */
 
-    div#mobilebox {
+    div.catpage {
+        color: blue;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width: 100%;
+        margin: 0;
     }
 
-    span#desktopbody {
-        /* visibility: hidden; */
-        display: none;
+    div.styleline {
+        width: 60%;
     }
 
     img.catthumbnail {
-        max-width: 70%;
+        /* max-width: 70%; */
         position: static;
+        /* top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; */
+        width: 80vw;
+        margin: 0 auto 0 auto;
     }
 
     div.bio {
-        width: 100%;
+        min-width: 90%;
         /* margin: 1vw auto 1vw auto; */
-        margin: 0;
+        /* margin: 0 auto 0 auto; */
     }
 
     div.bio ul.bioinfo {
         padding: 3vh 3vw 3vh 3vw;
         width: 90%;
-        margin: 0;
+        /* margin: 0; */
     }
 
-    
+    div#imagebox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-block-size: 50vh;
+    }
+
+    /* h1.catname {
+        margin-top: -10vh;
+    } */
+
+
 }
 
 @media screen and (orientation: landscape) {
@@ -404,6 +418,7 @@ textarea#description {
 
     div#mobileimggrid {
         visibility: hidden;
+        display: none;
     }
 }
 
@@ -466,9 +481,11 @@ a.namelink:hover {
     font-style: italic;
 }
 
-img.catthumbnail {
-    max-width: 27%;
-    position: absolute;
+@media screen and (orientation: landscape) {
+    img.catthumbnail {
+        width: 25%;
+        position: absolute;
+    }
 }
 
 img.catfullimg {
@@ -982,23 +999,26 @@ body#tulippage div.styleline {
 
 
 /* odysseus */
-img#odysseus1 {
-    bottom: 5vh;
-    left: 6vw;
-}
+@media screen and (orientation: landscape) {
+    img#odysseus1 {
+        bottom: 5vh;
+        left: 6vw;
+    }
 
-img#odysseus2 {
-    right: 3vw;
-    top: 15vh;
-    min-height: 65vh;
-    max-height: 65vh;
-}
+    img#odysseus2 {
+        right: 3vw;
+        top: 15vh;
+        height: 50vh;
+        width: auto;
+    }
 
-img#odysseus3 {
-    right: 30vw;
-    top: 15vh;
-    min-height: 65vh;
-    max-height: 65vh;
+    img#odysseus3 {
+        right: 30vw;
+        top: 35vh;
+        height: 50vh;
+
+        width: auto;
+    }
 }
 
 body#odysseuspage div#body {

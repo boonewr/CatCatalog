@@ -13,22 +13,16 @@
     
     <header id="navbar">
         <div id="headercontent">
-            <div id="mainlink" class="navlink" class="headerelement"><a class="nav" href="main.html">Main Page</a></div>
-            <h1 id="title" class="headerelement">Cat Catalogue</h1>
-            <div id="searchlink" class="navlink" class="headerelement">Search</div>
+            <div id="mainlink" class="navlink"><a class="nav" href="main.html">Main Page</a></div>
+            <h1 id="title">Cat Catalogue</h1>
+            <div id="searchlink" class="navlink">Search</div>
         </div>
     </header>
 
-    <div id="body">
+    <div id="body" class="catpage">
 
         <h1 class="catname" id="test">SID</h1>
         <div class="styleline"></div>
-
-        <img class="catthumbnail" id="sid1" src="images/Sid/sid1.png" alt="a black cat standing in a garden bed">
-        <img class="catthumbnail" id="sid2" src="images/Sid/sid2.png"
-            alt="a black cat laying on scraps of wrapping paper with a wild look in its eyes">
-        <img class="catthumbnail" id="sid3" src="images/Sid/sid3.png"
-            alt="a black cat sitting on a chair in a dramatic pose">
 
         <div class="bio" id="catdesc">
             <ul class="bioinfo">
@@ -47,6 +41,13 @@
                 </li>
             </ul>
         </div>
+
+        <img class="catthumbnail" id="sid1" src="images/Sid/sid1.png" alt="a black cat standing in a garden bed">
+        <img class="catthumbnail" id="sid2" src="images/Sid/sid2.png"
+            alt="a black cat laying on scraps of wrapping paper with a wild look in its eyes">
+        <img class="catthumbnail" id="sid3" src="images/Sid/sid3.png"
+            alt="a black cat sitting on a chair in a dramatic pose">
+
     </div>
 
     <footer class="otherinfo" id="singlepage">
@@ -54,7 +55,7 @@
     </footer>
     <div id="grayout"></div>
     <div id="searchpanel">
-        <input type="text" name="textsearch" id="searchtext">
+        <input type="text" name="textsearch" id="searchtext" placeholder="Search...">
         <div id="searchitems">
             <div class="searchitem" data-relevance="0" id="sid"><a href="sid.html">Sid</a></div>
             <div class="searchitem" data-relevance="0" id="ember"><a href="ember.html">Ember</a></div>

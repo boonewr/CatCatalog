@@ -59,6 +59,22 @@ exitFull.addEventListener("click", function () {
 });
 
 
+mobileThumbnails = document.getElementsByClassName("mobilethumbnail");
+
+for (let i = 0; i < mobileThumbnails.length; i++) {
+    mobileThumbnails[i].addEventListener("click", function () {
+        console.log("pressed");
+        catFullImages[i].style.opacity = "1";
+        catFullImages[i].style.top = "10vh";
+        catFullImages[i].style.left = (html.offsetWidth - catFullImages[i].offsetWidth) / 2 + "px";
+        console.log((html.offsetWidth - catFullImages[i].offsetWidth));
+        grayOut.style.top = "0px";
+        grayOut.style.opacity = "0.82";
+        exitFull.style.top = "0px";
+        navbar.style.zIndex = "initial";
+    });
+};
+
 
 
 
