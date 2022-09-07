@@ -84,10 +84,12 @@ div#searchitems {
 
 div.searchitem {
     position: fixed;
+    margin-left: 1vw;
 }
 
-div.searchitem:hover {
-    background-color: lightskyblue;
+div.searchitem:hover a {
+    background-color: darkslategray;
+    color: lavender;
 }
 
 div.searchitem a {
@@ -95,8 +97,9 @@ div.searchitem a {
     color: darkslategray;
     width: 75%;
     padding: 1vh;
-    box-shadow: 1px 1px dimgray;
+    box-shadow: 2px 2px darkslategray;
 }
+
 
 input#searchtext {
     position: fixed;
@@ -104,6 +107,8 @@ input#searchtext {
     color: darkslategray;
     border: 2px lightslategray solid;
     margin: 1vw;
+    margin-top: 0.5vh;
+    font-size: larger;
 }
 
 
