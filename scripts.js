@@ -34,6 +34,20 @@ window.addEventListener("scroll", function() {
 });
 
 
+vh = window.innerHeight / 100;
+
+mainTitle = document.getElementById("mainpagetitle");
+mainTitle.addEventListener("click", function() {
+    console.log("autoscrolled");
+    // thank you https://stackoverflow.com/questions/28977498/smooth-scroll-using-window-scrollby
+    window.scrollBy({
+        behavior: "smooth",
+        left: 0,
+        top: (90 * vh)
+    });
+});
+
+
 
 
 // -------------------------------------- Search Function! ----------------------------------------
@@ -50,7 +64,6 @@ const searchLinks = Array.from(searchLinkss);
 
 searchLink.addEventListener("click", showSearchPanel);
 searchBox.addEventListener("input", calcRelevance);
-vh = window.innerHeight / 100;
 let test = "test";
 
 function showSearchPanel() {
@@ -119,7 +132,6 @@ function hideSearch() {
 
 function orderItems() {
     for (let i = 0; i < searchLinks.length; i++) {
-        // searchLinks[i].style.top = "calc(6vh + " + itemHeight * i + "px)";
         searchLinks[i].style.top = ((itemHeight + vh * 2) * i) + (vh * 12) + "px";
     }
 }

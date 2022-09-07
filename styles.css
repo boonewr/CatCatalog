@@ -1,7 +1,13 @@
 * {
     transition-property: all;
     transition-duration: 300ms;
+    /* border-radius: 5% 1%; */
 }
+
+
+
+
+/* -------------------------- main page/general ------------------------ */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,22 +22,15 @@ body {
 
 header#navbar {
     background-color: lavender;
-    /* margin: 0 -6vh 6vh -6vh; */
-    /* padding: 2vh 2vw 2vh 2vw; */
     position: fixed;
     top: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1vh;
     text-align: center;
-    /* padding-bottom: 2vh; */
-    /* padding-top: 1.5vh; */
-
     min-block-size: 10vh;
     width: 100%;
     border-bottom: 2px lightslategray solid;
-
-    /* I expected this to be -1 for on top, but this works */
     z-index: 1;
 }
 
@@ -67,52 +66,6 @@ a.nav:hover {
     color: cadetblue;
 }
 
-div#searchpanel {
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: lavender;
-    z-index: 20;
-    min-height: 100%;
-    min-width: 20%;
-    border-left: lightslategray 2px solid;
-    display: none;
-}
-
-div#searchitems {
-    display: inline;
-}
-
-div.searchitem {
-    position: fixed;
-    margin-left: 1vw;
-}
-
-div.searchitem:hover a {
-    background-color: darkslategray;
-    color: lavender;
-}
-
-div.searchitem a {
-    text-decoration: none;
-    color: darkslategray;
-    width: 75%;
-    padding: 1vh;
-    box-shadow: 2px 2px darkslategray;
-}
-
-
-input#searchtext {
-    position: fixed;
-    background-color: rgb(235, 235, 246);
-    color: darkslategray;
-    border: 2px lightslategray solid;
-    margin: 1vw;
-    margin-top: 0.5vh;
-    font-size: larger;
-}
-
-
 h1#title {
     margin-block: 0;
 }
@@ -125,6 +78,7 @@ h1#mainpagetitle {
     width: 34vw;
     font-size: 3vw;
     text-align: center;
+    cursor: pointer;
 }
 
 div#navigatorarrow {
@@ -191,10 +145,8 @@ div.content div.contenttitle {
 
 iframe#lpmap {
     height: 50vh;
-    /* height: 80%; */
     width: 90%;
 }
-
 
 div#imggrid {
     margin: 40vh 8vw 10vh 8vw;
@@ -228,9 +180,7 @@ footer.otherinfo {
     font-size: smaller;
 }
 
-/* I need to play around with this some more. The idea is that I dont need to have all the info on every single page, but I still want to have the visual effect of a footer. */
 footer.otherinfo#singlepage {
-    /* position: absolute; */
     margin-top: 0;
     bottom: 6vh;
     padding-top: 0vh;
@@ -262,7 +212,68 @@ div#lastcontent {
 
 
 
-/* survey */
+
+
+
+
+/* ------------------------ search function ----------------------- */
+
+div#searchpanel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: lavender;
+    z-index: 20;
+    min-height: 100%;
+    min-width: 20%;
+    border-left: lightslategray 2px solid;
+    display: none;
+}
+
+div#searchitems {
+    display: inline;
+}
+
+div.searchitem {
+    position: fixed;
+    margin-left: 1vw;
+}
+
+div.searchitem:hover a {
+    background-color: darkslategray;
+    color: lavender;
+}
+
+div.searchitem a {
+    text-decoration: none;
+    color: darkslategray;
+    width: 75%;
+    padding: 1vh;
+    box-shadow: 2px 2px darkslategray;
+}
+
+
+input#searchtext {
+    position: fixed;
+    background-color: rgb(235, 235, 246);
+    color: darkslategray;
+    border: 2px lightslategray solid;
+    margin: 1vw;
+    margin-top: 0.5vh;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------- survey -------------------------- */
 
 form#survey {
     margin: 15vh 5vw 15vh 5vw;
@@ -290,11 +301,6 @@ input.button {
     color: darkslategray;
 }
 
-/* input#file-upload-button {
-    background-color: rgb(235, 235, 246);
-    border: lightslategray 2px solid;
-} */
-
 textarea#description {
     display: block;
     margin: 1vh;
@@ -304,7 +310,10 @@ textarea#description {
 
 
 
-/* media queries */
+
+
+
+/* -------------------------- media queries -------------------------- */
 
 @media screen and (orientation: portrait) {
     body {
@@ -313,7 +322,6 @@ textarea#description {
 
     h1#title {
         font-size: 1.5em;
-        /* max-width: 40%; */
     }
 
     h1#mainpagetitle {
@@ -322,8 +330,6 @@ textarea#description {
         width: 60%;
         margin: 10vh auto 10vh auto;
     }
-
-
 
     header#navbar {
         justify-content: space-between;
@@ -337,16 +343,10 @@ textarea#description {
         height: 2vh;
     }
 
-    /* 
-    .navlink, .headerelement {
-        max-width: 40%;
-    } */
-
     div#headercontent {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        /* max-width: 30%; */
     }
 
     div#imggrid {
@@ -373,12 +373,6 @@ textarea#description {
         margin: 0 auto 0 auto;
     }
 
-    /* img.catfullimg {
-        max-width: 80vw; 
-        height: auto; 
-        width: 100%;
-    } */
-
     div.catpage {
         color: blue;
         display: flex;
@@ -401,14 +395,11 @@ textarea#description {
 
     div.bio {
         min-width: 90%;
-        /* margin: 1vw auto 1vw auto; */
-        /* margin: 0 auto 0 auto; */
     }
 
     div.bio ul.bioinfo {
         padding: 3vh 3vw 3vh 3vw;
         width: 90%;
-        /* margin: 0; */
     }
 
     div#imagebox {
@@ -417,10 +408,6 @@ textarea#description {
         width: 100%;
         min-block-size: 50vh;
     }
-
-    /* h1.catname {
-        margin-top: -10vh;
-    } */
 
     img.catfullimg {
         position: fixed;
@@ -464,12 +451,12 @@ textarea#description {
 
 
 
+
+
 /* -------------------------------------- cat pages -------------------------------------- */
 
 h1.catname {
-    /* width: 100%; */
     text-align: center;
-    /* margin: 20vh 5vh 0 10vh; */
     margin-top: 20vh;
     margin-left: auto;
     margin-right: auto;
@@ -534,8 +521,6 @@ a.namelink:hover {
     }
 }
 
-
-
 div#grayout {
     min-height: 100vh;
     min-width: 100vw;
@@ -554,6 +539,14 @@ div#exitfullscreen {
     opacity: 0;
     top: -10000px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -607,6 +600,9 @@ body#sidpage div.styleline {
     background-color: white;
 }
 
+
+
+
 /* ember */
 img#ember1 {
     top: 12vh;
@@ -656,6 +652,7 @@ body#ember a.namelink:hover,
 body#ember a.nav:hover {
     color: rgb(255, 0, 0);
 }
+
 
 
 
@@ -721,6 +718,8 @@ body#biscuitpage div.styleline {
 }
 
 
+
+
 /* emmett */
 img#emmett1 {
     top: 14vh;
@@ -738,7 +737,6 @@ img#emmett2 {
     top: 25vh;
     left: 3vw;
 }
-
 
 body#emmettpage,
 body#emmettpage div.infocontent,
@@ -836,6 +834,7 @@ body#lucypage div.styleline {
 
 
 
+
 /* gunny */
 img#gunny1 {
     bottom: 2vh;
@@ -889,6 +888,8 @@ body#gunnypage div.styleline {
 }
 
 
+
+
 /* Gunny's brother */
 img#brother1 {
     top: 15vh;
@@ -935,6 +936,8 @@ body#brotherpage a.nav:hover {
 body#brotherpage div.styleline {
     background-color: lightslategray;
 }
+
+
 
 
 /* violin */
@@ -984,6 +987,7 @@ body#violinpage a.nav:hover {
 body#violinpage div.styleline {
     background-color: lightslategray;
 }
+
 
 
 
@@ -1041,6 +1045,7 @@ body#tulippage div.styleline {
 
 
 
+
 /* odysseus */
 @media screen and (orientation: landscape) {
     img#odysseus1 {
@@ -1069,8 +1074,6 @@ body#odysseuspage div#body {
 }
 
 body#odysseuspage div.bio {
-    /* margin-left: -12vw;
-    margin-right: -0vw; */
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
@@ -1109,6 +1112,7 @@ body#odysseuspage a.nav:hover {
 body#odysseuspage div.styleline {
     background-color: lightslategray;
 }
+
 
 
 
@@ -1162,6 +1166,7 @@ body#milopage a.nav:hover {
 body#milopage div.styleline {
     background-color: lightslategray;
 }
+
 
 
 
@@ -1219,6 +1224,8 @@ body#guinnesspage div.styleline {
 }
 
 
+
+
 /* ernie */
 img#ernie1 {
     top: 20vh;
@@ -1261,6 +1268,7 @@ body#erniepage a.namelink:hover,
 body#erniepage a.nav:hover {
     color: rgb(255, 0, 0);
 }
+
 
 
 
@@ -1312,6 +1320,7 @@ body#beebopage a.namelink:hover,
 body#beebopage a.nav:hover {
     color: rgb(0, 0, 0);
 }
+
 
 
 
