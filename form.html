@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <script src="surveyscripts.js" defer></script>
+    <script src="formscripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat-alog</title>
 </head>
@@ -19,7 +18,7 @@
         </div>
     </header>
 
-    <form action="TBD" id="survey">
+    <form action="javascript:void(0);" onsubmit="return formFunction()" id="submitcat">
         <fieldset>
             <label>Your cat's name:</label>
             <input type="text" name="catname" id="name">
@@ -34,6 +33,11 @@
             <input type="submit" value="Submit" class="button">
         </fieldset>
     </form>
+
+    <div id="thankyou">
+        <h1>Thank you for your submission!</h1>
+        <div>More cats to share? <a class="nav" id="reset">Submit another here.</a></div>
+    </div>
 
     <footer class="otherinfo" id="singlepage">
         <div class="footerbox"></div>

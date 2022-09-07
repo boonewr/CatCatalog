@@ -215,7 +215,6 @@ div#lastcontent {
 
 
 
-
 /* ------------------------ search function ----------------------- */
 
 div#searchpanel {
@@ -275,7 +274,10 @@ input#searchtext {
 
 /* --------------------- survey -------------------------- */
 
-form#survey {
+
+/* ---------------------------- submission form -----------------------------------------*/
+
+form#submitcat {
     margin: 15vh 5vw 15vh 5vw;
     background-color: lavender;
     border: 2px lightslategray solid;
@@ -305,6 +307,25 @@ textarea#description {
     display: block;
     margin: 1vh;
 }
+
+div#thankyou {
+    border: 2px lightslategray solid;
+    padding: 3vh;
+    margin-top: 30vh;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30vh;
+    display: none;
+}
+
+div#thankyou a {
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -427,6 +448,10 @@ textarea#description {
 
     div#searchpanel {
         min-width: 40%;
+    }
+
+    div#thankyou {
+        width: 80%;
     }
 
 }
@@ -622,34 +647,34 @@ img#ember3 {
     min-width: 30%;
 }
 
-body#ember,
-body#ember div.infocontent,
-body#ember div.bio ul.bioinfo {
+body#emberpage,
+body#emberpage div.infocontent,
+body#emberpage div.bio ul.bioinfo {
     background-color: rgb(200, 200, 200);
     color: rgb(53, 0, 0);
 }
 
-body#ember div#headercontent,
-body#ember header#navbar,
-body#ember footer.otherinfo#singlepage {
+body#emberpage div#headercontent,
+body#emberpage header#navbar,
+body#emberpage footer.otherinfo#singlepage {
     color: rgb(53, 0, 0);
     background-color: rgb(190, 190, 190);
     ;
 }
 
-body#ember div.infotitle,
-body#ember h1.catname,
-body#ember h1#title {
+body#emberpage div.infotitle,
+body#emberpage h1.catname,
+body#emberpage h1#title {
     color: rgb(120, 0, 0);
 }
 
-body#ember a.namelink,
-body#ember a.nav {
+body#emberpage a.namelink,
+body#emberpage a.nav {
     color: rgb(160, 0, 0);
 }
 
-body#ember a.namelink:hover,
-body#ember a.nav:hover {
+body#emberpage a.namelink:hover,
+body#emberpage a.nav:hover {
     color: rgb(255, 0, 0);
 }
 
@@ -675,7 +700,7 @@ img#biscuit3 {
     min-width: 26vw;
 }
 
-h1#biscuit {
+h1#biscuitname {
     margin-top: 15vh;
 }
 
