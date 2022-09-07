@@ -51,6 +51,7 @@ div#mainlink {
 
 div#searchlink {
     padding-right: 2vw;
+    cursor: pointer;
 }
 
 a.nav:link {
