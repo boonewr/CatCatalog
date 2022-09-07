@@ -28,7 +28,7 @@ title = document.getElementById("bodytitle");
 
 // }
 
-arrow = document.getElementById("navigatorarrow");
+
 
 
 
@@ -62,6 +62,13 @@ function showSearchPanel() {
         searchLinks[i].relevance = 0;
     }
 }
+
+arrow = document.getElementById("navigatorarrow");
+window.addEventListener("scroll", function() {
+    if (window.scrollY > (10 * vh)) {
+        arrow.style.opacity = "0";
+    }
+})
 
 function calcRelevance() {
     // console.log('relevance calculating ' + test.length);
