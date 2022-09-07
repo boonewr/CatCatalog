@@ -39,7 +39,7 @@ for (let i = 0; i < catThumnails.length; i++) {
         catFullImages[i].style.opacity = "1";
         catFullImages[i].style.top = "10vh";
         catFullImages[i].style.left = (html.offsetWidth - catFullImages[i].offsetWidth) / 2 + "px";
-        console.log((html.offsetWidth - catFullImages[i].offsetWidth));
+        //console.log((html.offsetWidth - catFullImages[i].offsetWidth));
         grayOut.style.top = "0px";
         grayOut.style.opacity = "0.82";
         exitFull.style.top = "0px";
@@ -56,23 +56,6 @@ exitFull.addEventListener("click", function () {
         catFullImages[i].style.top = "-10000vh";
     }
 });
-
-
-// mobileThumbnails = document.getElementsByClassName("mobilethumbnail");
-
-// for (let i = 0; i < mobileThumbnails.length; i++) {
-//     mobileThumbnails[i].addEventListener("click", function () {
-//         console.log("pressed");
-//         catFullImages[i].style.opacity = "1";
-//         catFullImages[i].style.top = "10vh";
-//         catFullImages[i].style.left = (html.offsetWidth - catFullImages[i].offsetWidth) / 2 + "px";
-//         console.log((html.offsetWidth - catFullImages[i].offsetWidth));
-//         grayOut.style.top = "0px";
-//         grayOut.style.opacity = "0.82";
-//         exitFull.style.top = "0px";
-//         navbar.style.zIndex = "7";
-//     });
-// };
 
 
 
@@ -108,10 +91,6 @@ function showSearchPanel() {
 }
 
 function calcRelevance() {
-    // console.log('relevance calculating ' + test.length);
-    // console.log("relevanec = " + calcSearch("loremipsum", "loremipsum"));
-    // searchLinks[0].relevance = calcSearch("loremipsum", "loremipsum");
-    // console.log("relevance of item 0: " + searchLinks[0].relevance);
     if (searchBox.value == "") {
         for (let i = 0; i < searchLinks.length; i++) {
             searchLinks[i].relevance = 0;
@@ -120,7 +99,7 @@ function calcRelevance() {
 
         for (let i = 0; i < searchLinks.length; i++) {
             searchLinks[i].relevance = calcSearch("" + searchLinks[i].id, searchBox.value, parseInt(searchLinks[i].relevance));
-            console.log("relevance of search link " + i + ": " + searchLinks[i].relevance + " the name of which is: " + searchLinks[i].id);
+            //console.log("relevance of search link " + i + ": " + searchLinks[i].relevance + " the name of which is: " + searchLinks[i].id);
         }
         searchLinks.sort((a, b) => {
             if (a.relevance < b.relevance) {

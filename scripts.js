@@ -1,35 +1,7 @@
 title = document.getElementById("bodytitle");
-
-// window.addEventListener("scroll", checkScroll);
-
-
-// mainbody = document.getElementById("mainpagebody");
-// bodyheight = mainbody.offsetHeight;
-// bodyPosition = mainbody.getBoundingClientRect();
-// bodyTop = bodyPosition.top;
-// leftTitle = document.getElementById("bodytitle");
-// titleHeight = leftTitle.offsetHeight;
-// stopHeight = bodyTop - titleHeight;
-
-// function checkScroll() {
-//     if (window.scrollY > (0.9 * stopHeight)) {
-//         title.style.position = "fixed";
-//         title.style.top = "20vh";
-//         console.log(titleHeight + " ," + bodyTop + " ,,," + stopHeight);
-//         console.log("window x: " + window.screenX);
-//     }
-//     if (window.scrollY < 1000) {
-//         title.style.position = "";
-//     }
-//     if (window.scrollY > bodyPosition.bottom) {
-//         title.style.position = "relative";
-//         title.style.top = bodyPosition.bottom + "px";
-//     }
-
-// }
-
 arrow = document.getElementById("navigatorarrow");
-window.addEventListener("scroll", function() {
+
+window.addEventListener("scroll", function () {
     arrow.style.opacity = "0";
 });
 
@@ -37,7 +9,7 @@ window.addEventListener("scroll", function() {
 vh = window.innerHeight / 100;
 
 mainTitle = document.getElementById("mainpagetitle");
-mainTitle.addEventListener("click", function() {
+mainTitle.addEventListener("click", function () {
     console.log("autoscrolled");
     // thank you https://stackoverflow.com/questions/28977498/smooth-scroll-using-window-scrollby
     window.scrollBy({
@@ -51,7 +23,6 @@ mainTitle.addEventListener("click", function() {
 
 
 // -------------------------------------- Search Function! ----------------------------------------
-// I am baffled that this all works
 
 searchBox = document.getElementById("searchtext");
 searchPanel = document.getElementById("searchpanel");
@@ -81,10 +52,6 @@ function showSearchPanel() {
 
 
 function calcRelevance() {
-    // console.log('relevance calculating ' + test.length);
-    // console.log("relevanec = " + calcSearch("loremipsum", "loremipsum"));
-    // searchLinks[0].relevance = calcSearch("loremipsum", "loremipsum");
-    // console.log("relevance of item 0: " + searchLinks[0].relevance);
     if (searchBox.value == "") {
         for (let i = 0; i < searchLinks.length; i++) {
             searchLinks[i].relevance = 0;
@@ -93,7 +60,7 @@ function calcRelevance() {
 
         for (let i = 0; i < searchLinks.length; i++) {
             searchLinks[i].relevance = calcSearch("" + searchLinks[i].id, searchBox.value, parseInt(searchLinks[i].relevance));
-            console.log("relevance of search link " + i + ": " + searchLinks[i].relevance + " the name of which is: " + searchLinks[i].id);
+            //console.log("relevance of search link " + i + ": " + searchLinks[i].relevance + " the name of which is: " + searchLinks[i].id);
         }
         searchLinks.sort((a, b) => {
             if (a.relevance < b.relevance) {

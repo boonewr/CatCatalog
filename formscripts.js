@@ -25,29 +25,10 @@ function formFunction() {
     thanks.style.display = "block";
 }
 
-reset.addEventListener("click", function() {
+reset.addEventListener("click", function () {
     form.style.display = "block";
     thanks.style.display = "none";
 });
-
-
-
-// body = document.body;
-// html = document.documentElement;
-// emptyFooter = document.getElementById("singlepage");
-// form = document.getElementById("submitcat")
-
-// footerPosition = emptyFooter.getBoundingClientRect();
-// formPosition = form.getBoundingClientRect();
-
-// height = Math.max(body.scrollHeight, body.offsetHeight,
-//     html.clientHeight, html.scrollHeight, html.offsetHeight);
-
-//     window.addEventListener("load", function () {
-//         footerDistance = height - formPosition.bottom - (emptyFooter.clientHeight * 6.5);
-//         emptyFooter.style.marginTop = footerDistance + "px";
-//     });
-
 
 
 // -------------------------------------- Search Function! ----------------------------------------
