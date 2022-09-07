@@ -71,7 +71,7 @@ div#searchpanel {
     right: 0;
     top: 0;
     background-color: lavender;
-    z-index: 1;
+    z-index: 20;
     min-height: 100%;
     min-width: 20%;
     border-left: lightslategray 2px solid;
@@ -324,6 +324,7 @@ textarea#description {
         font-size: 12px;
         width: 100vw;
         min-block-size: 3vh;
+        z-index: 7;
     }
 
     div#headercontent {
@@ -386,14 +387,10 @@ textarea#description {
     }
 
     img.catthumbnail {
-        /* max-width: 70%; */
         position: static;
-        /* top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0; */
         width: 80vw;
         margin: 0 auto 0 auto;
+        cursor: zoom-in;
     }
 
     div.bio {
@@ -424,10 +421,19 @@ textarea#description {
         width: 80%;
         top: 10000vh;
         opacity: 0;
+        z-index: 11;
     }
 
     ul.bioinfo {
         list-style: none;
+    }
+
+    div#navigatorarrow {
+        visibility: hidden;
+    }
+
+    div#searchpanel {
+        min-width: 40%;
     }
 
 }
@@ -473,7 +479,7 @@ div.styleline {
 div.bio {
     width: 30%;
     margin: 5vh auto 5vh auto;
-    z-index: 1;
+    z-index: 6;
 }
 
 div.bio ul.bioinfo {
@@ -481,12 +487,14 @@ div.bio ul.bioinfo {
     border: 2px lightslategray solid;
     padding: 3vh 3vw 3vh 3vw;
     color: darkslateblue;
+    z-index: 6;
 }
 
 ul.bioinfo div.infotitle {
     font-size: 1.2em;
     color: darkslateblue;
     font-weight: bolder;
+    z-index: 6;
 }
 
 ul.bioinfo div.infocontent {
@@ -507,7 +515,8 @@ a.namelink:hover {
     img.catthumbnail {
         width: 25%;
         position: absolute;
-        z-index: -1;
+        z-index: 1;
+        cursor: zoom-in;
     }
 
     img.catfullimg {
@@ -515,6 +524,7 @@ a.namelink:hover {
         height: 80vh;
         top: 10000vh;
         opacity: 0;
+        z-index: 11;
     }
 }
 
@@ -527,12 +537,14 @@ div#grayout {
     position: fixed;
     opacity: 0;
     top: -10000px;
+    z-index: 9;
 }
 
 div#exitfullscreen {
     min-height: 100vh;
     min-width: 100vw;
     position: fixed;
+    z-index: 12;
     opacity: 0;
     top: -10000px;
 }
