@@ -461,6 +461,10 @@ div#thankyou a {
         visibility: hidden;
         display: none;
     }
+
+    img#tulip2 {
+        max-width: 200px;
+    }
 }
 
 
@@ -529,7 +533,7 @@ a.namelink:hover {
     img.catthumbnail {
         width: 25%;
         position: absolute;
-        z-index: 1;
+        /* z-index: 1; */
         cursor: zoom-in;
     }
 
@@ -686,12 +690,12 @@ img#biscuit1 {
 
 img#biscuit2 {
     bottom: 2vh;
-    left: 25vw;
-    min-width: 45vw;
+    right: 3vw;
+    min-width: 35vw;
 }
 
 img#biscuit3 {
-    top: 35vh;
+    top: 25vh;
     right: 1vw;
     min-width: 26vw;
 }
@@ -1016,18 +1020,19 @@ body#violinpage div.styleline {
 img#tulip1 {
     top: 30vh;
     left: 2vw;
-    min-width: 27vw;
+    min-width: 27vw !important;
 }
 
 img#tulip2 {
     bottom: 2vh;
-    right: 18vw;
+    right: 3vw;
     min-width: 30vw;
 }
 
 img#tulip3 {
     right: 3vw;
     top: 15vh;
+    
 }
 
 h1#tulip {
