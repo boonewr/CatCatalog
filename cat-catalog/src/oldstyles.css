@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+:root {
+    --page-bg: rgb(235, 235, 246);
+    --content-bg: lavender;
+    /* For navbar, bio background, etc. */
+    --text-color: darkslategray;
+    --title-color: darkslategray;
+    --link-color: darkslateblue;
+    --link-hover-color: cadetblue;
+    --styleline-color: darkslategray;
+    --border-color: lightslategray;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--page-bg);
+    /* ... */
+}
+
+header#navbar,
+div.bio ul.bioinfo {
+    background-color: var(--content-bg);
+    border-color: var(--border-color);
+}
+
+h1.catname,
+h1#title,
+ul.bioinfo div.infotitle {
+    color: var(--title-color);
+}
+
+a.nav:link,
+a.nav:visited,
+a.namelink {
+    color: var(--link-color);
+}
+
+a.nav:hover,
+a.namelink:hover {
+    color: var(--link-hover-color);
+}
+
+div.styleline {
+    background-color: var(--styleline-color);
+}
+
+
+
+
+/* -------------------------- main page/general ------------------------ */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+
+    color: darkslategray;
+    background-color: rgb(235, 235, 246);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header#navbar {
+    background-color: lavender;
+    position: fixed;
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1vh;
+    text-align: center;
+    min-block-size: 10vh;
+    width: 100%;
+    border-bottom: 2px lightslategray solid;
+    z-index: 1;
+}
+
+div#headercontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+div#mainlink {
+    padding-left: 2vw;
+}
+
+div#searchlink {
+    padding-right: 2vw;
+    cursor: pointer;
+}
+
+a.nav:link {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+a.nav:visited {
+    color: darkslategray
+}
+
+a.nav:hover {
+    color: cadetblue;
+}
+
+h1#title {
+    margin-block: 0;
+}
+
+h1#mainpagetitle {
+    margin: 36vh 27vw 49vh 27vw;
+    padding: 5vw;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    width: 34vw;
+    font-size: 3vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+div#navigatorarrow {
+    font-size: 30pt;
+    position: absolute;
+    bottom: 5vh;
+    left: 40vw;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#mainpagebody {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7vw 0 7vw;
+}
+
+h1#bodytitle {
+    background-color: rgb(235, 235, 246);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20vh;
+}
+
+h2#bodycontent {
+    background-color: black;
+}
+
+#rightbody {
+    width: 50%;
+}
+
+#leftbody {
+    width: 50%;
+}
+
+h1#bodytitle,
+h2#bodycontent {
+    margin-block-start: 0;
+}
+
+div#bodycolumn {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 100%;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    padding: 2vw 0 2vw 2vw;
+}
+
+div.content {
+    font-size: 1.5em;
+    margin-bottom: 20vh;
+    padding: 1vw;
+}
+
+div.content div.contenttitle {
+    font-weight: bolder;
+    margin-bottom: 1.5vh;
+}
+
+iframe#lpmap {
+    height: 50vh;
+    width: 90%;
+}
+
+div#imggrid {
+    margin: 40vh 8vw 10vh 8vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.imgrow {
+    display: flex;
+    justify-content: space-around;
+}
+
+img.gridimg {
+    /* width: 1000px;
+    max-width: 80%;
+    margin: 2vw; */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+    margin: 1vw;
+}
+
+footer.otherinfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    background-color: rgb(215, 215, 233);
+    padding-top: 6vh;
+    padding-bottom: 3vh;
+    margin-bottom: -6vh;
+    border-top: 2px lightslategray solid;
+
+    font-size: smaller;
+}
+
+footer.otherinfo#singlepage {
+    margin-top: 0;
+    bottom: 6vh;
+    padding-top: 0vh;
+    padding-bottom: 0;
+    height: 1vh;
+    color: rgb(215, 215, 233)
+}
+
+footer.otherinfo div.footerhead {
+    font-weight: bolder;
+}
+
+div#submit {
+    width: 15%;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-left: 40.5%;
+    padding: 1vw;
+    background-color: rgb(215, 215, 233);
+    border: 2px lightslategray solid;
+}
+
+div#lastcontent {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------ search function ----------------------- */
+
+div#searchpanel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: lavender;
+    z-index: 20;
+    /* High z-index to be on top */
+    min-height: 100%;
+    width: 20%;
+    /* Use width for consistency */
+    border-left: lightslategray 2px solid;
+
+    /* Hidden off-screen by default */
+    transform: translateX(100%);
+    /* Smooth slide-in transition (your global transition setting covers this) */
+}
+
+/* Add this class with JavaScript when the search panel is open */
+div#searchpanel.active {
+    transform: translateX(0);
+    /* Slide into view */
+}
+
+div#searchitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    /* Add margin to push items below the search bar */
+}
+
+div.searchitem {
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    /* Add some space between items */
+}
+
+div.searchitem:hover a {
+    background-color: darkslategray;
+    color: lavender;
+}
+
+div.searchitem a {
+    text-decoration: none;
+    color: darkslategray;
+    width: 75%;
+    padding: 1vh;
+    box-shadow: 2px 2px darkslategray;
+}
+
+
+input#searchtext {
+    position: fixed;
+    background-color: rgb(235, 235, 246);
+    color: darkslategray;
+    border: 2px lightslategray solid;
+    margin: 1vw;
+    margin-top: 0.5vh;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- submission form -----------------------------------------*/
+
+form#submitcat {
+    margin: 15vh 5vw 15vh 5vw;
+    background-color: lavender;
+    border: 2px lightslategray solid;
+    padding: 1vw;
+}
+
+fieldset {
+    border: none;
+}
+
+div.formlinebreak {
+    margin: 5vh;
+}
+
+input,
+textarea {
+    background-color: rgb(235, 235, 246);
+}
+
+input.button {
+    background-color: rgb(235, 235, 246);
+    border: lightslategray 2px solid;
+    color: darkslategray;
+}
+
+textarea#description {
+    display: block;
+    margin: 1vh;
+}
+
+div#thankyou {
+    border: 2px lightslategray solid;
+    padding: 3vh;
+    margin-top: 30vh;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30vh;
+    display: none;
+}
+
+div#thankyou a {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- media queries -------------------------- */
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 18px;
+    }
+
+    h1#title {
+        font-size: 1.5em;
+    }
+
+    h1#mainpagetitle {
+        font-size: 20pt;
+        padding: 2vw;
+        width: 60%;
+        margin: 10vh auto 10vh auto;
+    }
+
+    header#navbar {
+        justify-content: space-between;
+        font-size: 12px;
+        width: 100vw;
+        min-block-size: 3vh;
+        z-index: 7;
+    }
+
+    div#headercontent {
+        height: 2vh;
+    }
+
+    div#headercontent {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#imggrid {
+        margin-top: 0;
+        visibility: hidden;
+    }
+
+    div#mobileimggrid {
+        visibility: visible;
+    }
+
+    div#mainpagebody {
+        display: block;
+        margin: 0 auto 0 auto;
+        font-size: 12pt;
+    }
+
+    div#leftbody {
+        visibility: hidden;
+    }
+
+    div#rightbody {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    div.catpage {
+        color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+    }
+
+    div.styleline {
+        width: 60%;
+    }
+
+    img.catthumbnail {
+        position: static;
+        width: 80vw;
+        margin: 0 auto 0 auto;
+        cursor: zoom-in;
+    }
+
+    div.bio {
+        min-width: 90%;
+    }
+
+    div.bio ul.bioinfo {
+        padding: 3vh 3vw 3vh 3vw;
+        width: 90%;
+    }
+
+    div#imagebox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-block-size: 50vh;
+    }
+
+    img.catfullimg {
+        position: fixed;
+        width: 80%;
+        top: 10000vh;
+        opacity: 0;
+        z-index: 11;
+    }
+
+    ul.bioinfo {
+        list-style: none;
+    }
+
+    div#navigatorarrow {
+        visibility: hidden;
+    }
+
+    div#searchpanel {
+        min-width: 40%;
+    }
+
+    div#thankyou {
+        width: 80%;
+    }
+
+}
+
+@media screen and (orientation: landscape) {
+    div#imggrid {
+        visibility: visible;
+    }
+
+    div#mobileimggrid {
+        visibility: hidden;
+        display: none;
+    }
+
+    img#tulip2 {
+        max-width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------- cat pages -------------------------------------- */
+
+/* sid */
+body#sidpage {
+    --page-bg: dimgray;
+    --content-bg: dimgray;
+    --text-color: lightgray;
+    --title-color: white;
+    --link-color: lightskyblue;
+    --link-hover-color: black;
+    --styleline-color: white;
+}
+
+/* ember */
+body#emberpage {
+    --page-bg: rgb(200, 200, 200);
+    --content-bg: rgb(190, 190, 190);
+    --text-color: rgb(53, 0, 0);
+    --title-color: rgb(120, 0, 0);
+    --link-color: rgb(160, 0, 0);
+    --link-hover-color: rgb(255, 0, 0);
+}
+
+/* ... and so on for the other cats ... */
