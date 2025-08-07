@@ -1,4 +1,5 @@
 // src/components/CatGrid.jsx
+
 function CatGrid({ cats }) {
     return (
         // We'll use the original ID for styling purposes.
